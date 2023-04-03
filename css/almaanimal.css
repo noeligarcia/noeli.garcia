@@ -1,0 +1,161 @@
+*
+{
+	padding: 0px;
+	margin: 0px;
+}
+#header
+{
+	width: 100%;
+	height: 20%;
+	background-color: #2a9d8f;
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: stretch;
+}
+#titulo
+{
+	font-family: 'Shantell Sans', cursive;
+	font-size: 30px;
+	color: #264653;
+	display: flex;
+	align-items: center;
+}
+.navheader
+{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	display: flex;
+	flex-flow: row nowrap;
+	list-style-type: none;
+	justify-content: space-between;
+}
+.img
+{
+	width: 40px;
+	height: 40px;
+}
+.img:hover
+{
+	background-color: e9c46a;
+}
+main
+{
+	width: 100%;
+	height: 95%;
+	display: grid;
+	grid-template-areas: 
+		"nav1 nav2"
+		"carousel carousel"
+		"presentacion presentacion"
+		"perros gatos";
+	grid-template-columns: 4fr 4fr;
+	grid-auto-rows: 15% 20% 40% 8%;
+	background-image: url("../imagenes/fondo2.jpg");
+	background-size: cover;
+}
+#nav1
+{
+	grid-area: nav1;
+	text-align: justify;
+	padding-top: 10%;
+}
+#nav2
+{
+	grid-area: nav2;
+	text-align: justify;
+	padding-top: 10%;
+}
+ul 
+{
+	list-style-type: none;
+	font-size: 13px;
+	
+}
+li 
+{
+	padding-top: 8px;
+}
+li:hover
+{
+	background-color: e9c46a;
+}
+li a 
+{
+	text-decoration: none;
+	color: 264653;
+	font-family: 'Shantell Sans', cursive;
+}
+#carousel
+{
+	grid-area: carousel;
+}
+#presentacion
+{
+	grid-area: presentacion;
+	text-align: center;
+	padding-top: 70px;
+	font-family: 'Shantell Sans', cursive;
+	font-size: 15px;
+	color: 264653;
+}
+#perros
+{
+	grid-area: perros;
+	text-align: center;
+	padding-top: 5px;
+}
+#gatos
+{
+	grid-area: gatos;
+	text-align: center;
+	padding-top: 5px;
+}
+#perros a 
+{
+	text-decoration: none;
+	color: 264653;
+	font-family: 'Shantell Sans', cursive;
+}
+#gatos a 
+{
+	text-decoration: none;
+	color: 264653;
+	font-family: 'Shantell Sans', cursive;
+}
+h3
+{
+	text-align: center;
+	font-size: 10px;
+}
+footer
+{
+	height: 8%;
+	width: 100%;
+	background-color: 2a9d8f;
+	font-size: 10px;
+	text-align: center;
+}
+footer a 
+{
+	color: e9c46a;
+}
+@media (min-width: 450px)
+{
+	main
+{
+	width: 100%;
+	height: 150%;
+	display: grid;
+	grid-template-areas: 
+		"nav1 carousel nav2"
+		"perros presentacion gatos";
+	grid-template-columns: 4fr 6fr 4fr;
+	grid-auto-rows: 50% 50%;
+	background-image: url("../imagenes/fondo2.jpg");
+	background-size: cover;
+}
+	#carousel {
+		padding-top: 50px;
+	}
+
+}
