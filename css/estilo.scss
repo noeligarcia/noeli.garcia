@@ -40,27 +40,27 @@ $colores:
 	}
 	.navheader
 	{
-	padding-top: 10px;
-	padding-bottom: 20px;
-	display: flex;
-	flex-flow: column nowrap;
-	list-style-type: none;
-	justify-content: space-between;
-	margin-left: 100px;
-	}
-	#redes 
-	{
-		.img
-		{
-		    width: 30px;
-			height: 30px;
-			margin: 3px;
-			&:hover
-			{
-				background-color: map-get($colores, amarillo);
-				border-radius: 50%;
-			}
-		}
+	    padding-top: 10px;
+	    padding-bottom: 20px;
+	    display: flex;
+	    flex-flow: column nowrap;
+	    list-style-type: none;
+	    justify-content: space-between;
+	    margin-left: 100px;
+        .redes 
+	    {
+	        .img
+		    {
+		        width: 30px;
+			    height: 30px;
+			    margin: 3px;
+			    &:hover
+			    {
+				    background-color: map-get($colores, amarillo);
+				    border-radius: 50%;
+			    }
+		    }
+	    }
 	}
 }
 main
@@ -252,12 +252,12 @@ button
         {
 	        padding-left: 80px;
 	        flex-flow: row nowrap;
-	    }
-	    .img 
-        {
-	        width: 60px;
-	        height: 60px;
-	        margin: 5px;
+            .img 
+            {
+	            width: 60px;
+	            height: 60px;
+	            margin: 5px;
+	        }
 	    }
 	}
 	main 
@@ -328,17 +328,21 @@ button
             padding-left: 40px;
         }
 	}
-	h4 {
+	.titulo4 
+    {
 		font-size: 25px;
 	}
-	h5 {
+	.titulo5
+    {
 		font-size: 20px;
 	}
-	textarea {
+	textarea 
+    {
 		height: 100px;
 		width: 150px;
 	}
-	form {
+	form 
+    {
 		height: 50%;
 		width: 30%;
 		margin-left: 35%;

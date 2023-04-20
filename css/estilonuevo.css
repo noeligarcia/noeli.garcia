@@ -35,12 +35,12 @@
   justify-content: space-between;
   margin-left: 100px;
 }
-.header #redes .img {
+.header .navheader .redes .img {
   width: 30px;
   height: 30px;
   margin: 3px;
 }
-.header #redes .img:hover {
+.header .navheader .redes .img:hover {
   background-color: #e9c46a;
   border-radius: 50%;
 }
@@ -210,7 +210,7 @@ button {
     padding-left: 80px;
     flex-flow: row nowrap;
   }
-  .header .img {
+  .header .navheader .img {
     width: 60px;
     height: 60px;
     margin: 5px;
@@ -268,10 +268,10 @@ button {
     font-size: 20px;
     padding-left: 40px;
   }
-  h4 {
+  .titulo4 {
     font-size: 25px;
   }
-  h5 {
+  .titulo5 {
     font-size: 20px;
   }
   textarea {
