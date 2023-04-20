@@ -1,281 +1,288 @@
-*
-{
-	padding: 0;
-	margin: 0;
+* {
+  padding: 0;
+  margin: 0;
 }
-#header
-{
-	width: 100%;
-	height: 20%;
-	background-color: #2a9d8f;
-	display: flex;
-	flex-flow: row nowrap;
-	align-items: stretch;
+
+.header {
+  width: 100%;
+  height: 14%;
+  background-color: #2a9d8f;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: stretch;
 }
-#titulo
-{
-	font-family: 'Shantell Sans', cursive;
-	font-size: 30px;
-	color: #264653;
-	display: flex;
-	align-items: center;
+.header #logo {
+  border-radius: 50%;
+  margin: 10px;
+  margin-top: 20px;
+  width: 20%;
+  height: 70%;
 }
-.navheader
-{
-	padding-top: 20px;
-	padding-bottom: 20px;
-	display: flex;
-	flex-flow: row nowrap;
-	list-style-type: none;
-	justify-content: space-between;
+.header #titulo {
+  font-family: "Shantell Sans", cursive;
+  font-size: 50px;
+  color: #264653;
+  display: flex;
+  align-items: center;
+  text-shadow: 8px 8px 5px #e9c46a;
 }
-.img
-{
-	width: 40px;
-	height: 40px;
+.header .navheader {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-flow: column nowrap;
+  list-style-type: none;
+  justify-content: space-between;
+  margin-left: 100px;
 }
-.img:hover
-{
-	background-color: e9c46a;
+.header #redes .img {
+  width: 30px;
+  height: 30px;
+  margin: 3px;
 }
-main
-{
-	width: 100%;
-	height: 100%;
-	display: grid;
-	grid-template-areas: 
-		"nav1 nav2"
-		"carousel carousel"
-		"presentacion presentacion"
-		"perros gatos";
-	grid-template-columns: 4fr 4fr;
-	grid-template-rows: 13% 20% 40% 10%;
-	grid-row-gap: 30px;
-	background-image: url("../imagenes/fondo2.jpg");
-	background-size: cover;
+.header #redes .img:hover {
+  background-color: #e9c46a;
+  border-radius: 50%;
 }
-#nav1
-{
-	grid-area: nav1;
-	text-align: justify;
-	padding-top: 5%;
+
+main {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-areas: "nav1 nav2" "carousel carousel" "presentacion presentacion" "perros gatos";
+  grid-template-columns: 4fr 4fr;
+  grid-template-rows: 13% 20% 40% 10%;
+  grid-row-gap: 30px;
+  background-image: url("../imagenes/fondo2.jpg");
+  background-size: cover;
 }
-#nav2
-{
-	grid-area: nav2;
-	text-align: justify;
-	padding-top: 5%;
+main #nav1 {
+  grid-area: nav1;
+  text-align: justify;
+  padding-top: 5%;
 }
-li 
-{
-	padding-top: 8px;
-	list-style-type: none;
-	font-size: 13px;
+main #nav2 {
+  grid-area: nav2;
+  text-align: justify;
+  padding-top: 5%;
 }
-li a:hover
-{
-	background-color: e9c46a;
+main li {
+  padding-top: 8px;
+  list-style-type: none;
+  font-size: 13px;
 }
-li a 
-{
-	text-decoration: none;
-	color: 264653;
-	font-family: 'Shantell Sans', cursive;
+main li a {
+  text-decoration: none;
+  color: #264653;
+  font-family: "Shantell Sans", cursive;
+  background-color: #e9c46a;
+  transition-property: background-color, color;
+  transition-duration: 5s;
 }
-#carousel
-{
-	grid-area: carousel;
+main li a:hover {
+  background-color: #e76f51;
+  color: #e9c46a;
 }
-#presentacion
-{
-	grid-area: presentacion;
-	text-align: center;
-	padding-top: 20%;
-	font-family: 'Shantell Sans', cursive;
-	font-size: 15px;
-	color: 264653;
+main #carousel {
+  grid-area: carousel;
 }
-#perros
-{
-	grid-area: perros;
-	text-align: center;
-	padding-top: 5px;
+main #presentacion {
+  grid-area: presentacion;
+  text-align: center;
+  padding-top: 10%;
+  font-family: "Shantell Sans", cursive;
+  font-size: 15px;
+  color: #264653;
 }
-#gatos
-{
-	grid-area: gatos;
-	text-align: center;
-	padding-top: 5px;
+main #perros {
+  grid-area: perros;
+  text-align: center;
+  padding-top: 5px;
 }
-#perros a 
-{
-	text-decoration: none;
-	color: 264653;
-	font-family: 'Shantell Sans', cursive;
+main #perros a {
+  text-decoration: none;
+  color: #264653;
+  font-family: "Shantell Sans", cursive;
 }
-#gatos a 
-{
-	text-decoration: none;
-	color: 264653;
-	font-family: 'Shantell Sans', cursive;
+main #perros img {
+  width: 40px;
+  height: 40px;
 }
-h3
-{
-	text-align: center;
-	font-size: 10px;
+main #gatos {
+  grid-area: gatos;
+  text-align: center;
+  padding-top: 5px;
 }
-#perros img {
-	width: 40px;
-	height: 40px;
+main #gatos a {
+  text-decoration: none;
+  color: #264653;
+  font-family: "Shantell Sans", cursive;
 }
-#gatos img {
-	width: 40px;
-	height: 40px;
+main #gatos img {
+  width: 40px;
+  height: 40px;
 }
-footer
-{
-	height: 6%;
-	width: 100%;
-	background-color: 2a9d8f;
-	font-size: 10px;
-	text-align: center;
+
+h3 {
+  text-align: center;
+  font-size: 10px;
 }
-footer a 
-{
-	color: e9c46a;
+
+footer {
+  height: 6%;
+  width: 100%;
+  background-color: #2a9d8f;
+  font-size: 10px;
+  text-align: center;
 }
+footer a {
+  color: #e9c46a;
+}
+
 #main2 {
-	background-image: url("../imagenes/fondo2.jpg");
-	height: 120%;
-	width: 100%;
-	background-size: cover;
-	display: flex;
-	flex-flow: column nowrap;
+  background-image: url("../imagenes/fondo2.jpg");
+  height: 120%;
+  width: 100%;
+  background-size: cover;
+  display: flex;
+  flex-flow: column nowrap;
 }
-h4 {
-	margin-top: 20px;
-	background-color: lightblue;
-	font-size: 25px;
-	font-family: 'Shantell Sans', cursive;
-	color: f4a261;
-	text-align: center;
+#main2 .titulo4 {
+  margin-top: 20px;
+  background-color: lightblue;
+  font-size: 25px;
+  font-family: "Shantell Sans", cursive;
+  color: #f4a261;
+  text-align: center;
 }
-h5 {
-	margin-top: 15px;
-	background-color: f4a261;
-	font-size: 20px;
-	font-family: 'Shantell Sans', cursive;
-	text-align: center;
-	color: lavender;
+#main2 .titulo5 {
+  margin-top: 15px;
+  background-color: #f4a261;
+  font-size: 20px;
+  font-family: "Shantell Sans", cursive;
+  text-align: center;
+  color: lavender;
 }
 
 form {
-	margin-top: 30px;
-	margin-left: 20%;
-	padding-bottom: 10px;
-	height: 50%;
-	width: 60%;
-	display: flex;
-	flex-flow: column nowrap;
-	align-items: center;
-	background-color: lavender;
-	border: double 5px #2a9d8f;
-	font-size: 20px;
+  margin-top: 30px;
+  margin-left: 20%;
+  padding-bottom: 10px;
+  height: 50%;
+  width: 60%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  background-color: #e76f51;
+  border: double 5px #2a9d8f;
+  font-size: 20px;
 }
+
 textarea {
-	height: 100px;
-	width: 150px;
+  height: 100px;
+  width: 150px;
 }
+
 button {
-	margin-top: 30px;
-	height: 30px;
-	width: 75px;
-	border: solid 3px #f4a261;
+  margin-top: 30px;
+  height: 30px;
+  width: 75px;
+  border: solid 3px #f4a261;
 }
-@media (min-width: 600px)
-{
-	#titulo {
-	font-family: 'Shantell Sans', cursive;
-	font-size: 70px;
-	color: #264653;
-	display: flex;
-	align-items: center;
-	}
-	.navheader {
-	padding-left: 600px;
-	}
-	.img {
-	width: 60px;
-	height: 60px;
-	}
-	main {
-	width: 100%;
-	height: 170%;
-	display: grid;
-	grid-template-areas: 
-		"nav1 carousel nav2"
-		"perros presentacion gatos";
-	grid-template-columns: 4fr 6fr 4fr;
-	grid-template-rows: 50% 50%;
-	}
-	#carousel {
-		padding-top: 50px;
-	}
-	#nav1 {
-		padding-top: 100px;
-		text-align: center;
-	}
-	#nav2 {
-		padding-top: 100px;
-		text-align: center;
-	}
-	li {
-	padding-top: 20px;
-	list-style-type: none;
-	font-size: 20px;
-	font-weight: bold;
-	}
-	#presentacion {
-		padding-top: 30px;
-		font-size: 20px;
-	}
-	#perros {
-		padding-top: 60px;
-	}
-	#gatos {
-		padding-top: 60px;
-	}
-	h3 {
-		font-size: 20px;
-	}
-	#perros img {
-		width: 150px;
-		height: 150px;
-	}
-	#gatos img {
-		width: 160px;
-		height: 160px;
-	}
-	footer a {
-		font-size: 20px;
-		padding-left: 40px;
-	}
-	footer {
-		height: 10%;
-	}
-	h4 {
-		font-size: 25px;
-	}
-	h5 {
-		font-size: 20px;
-	}
-	textarea {
-		height: 100px;
-		width: 150px;
-	}
-	form {
-		height: 50%;
-		width: 30%;
-		margin-left: 35%;
-	}
+
+@media (min-width: 600px) and (orientation: landscape) {
+  .header {
+    height: 20%;
+  }
+  .header #logo {
+    margin: 30px;
+    margin-top: 5px;
+    width: 10%;
+    height: 85%;
+  }
+  .header #titulo {
+    width: 70%;
+    font-size: 60px;
+    display: flex;
+    align-items: center;
+  }
+  .header .navheader {
+    padding-left: 80px;
+    flex-flow: row nowrap;
+  }
+  .header .img {
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+  }
+  main {
+    width: 100%;
+    height: 170%;
+    display: grid;
+    grid-template-areas: "nav1 carousel nav2" "perros presentacion gatos";
+    grid-template-columns: 4fr 6fr 4fr;
+    grid-template-rows: 45% 50%;
+  }
+  main #carousel {
+    padding-top: 50px;
+  }
+  main #nav1 {
+    padding-top: 100px;
+    text-align: center;
+  }
+  main #nav2 {
+    padding-top: 100px;
+    text-align: center;
+  }
+  main li {
+    padding-top: 20px;
+    list-style-type: none;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  main #presentacion {
+    padding-top: 10px;
+    font-size: 18px;
+  }
+  main #perros {
+    padding-top: 60px;
+  }
+  main #perros img {
+    width: 150px;
+    height: 150px;
+  }
+  main #gatos {
+    padding-top: 60px;
+  }
+  main #gatos img {
+    width: 160px;
+    height: 160px;
+  }
+  main h3 {
+    font-size: 20px;
+  }
+  footer {
+    height: 10%;
+  }
+  footer a {
+    font-size: 20px;
+    padding-left: 40px;
+  }
+  h4 {
+    font-size: 25px;
+  }
+  h5 {
+    font-size: 20px;
+  }
+  textarea {
+    height: 100px;
+    width: 150px;
+  }
+  form {
+    height: 50%;
+    width: 30%;
+    margin-left: 35%;
+  }
 }
+
+/*# sourceMappingURL=estilonuevo.css.map */
