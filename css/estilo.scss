@@ -32,7 +32,7 @@ $colores:
 	#titulo
 	{
 	font-family: 'Shantell Sans', cursive;
-	font-size: 50px;
+	font-size: 40px;
 	color: map-get($colores, verdeoscuro);
 	display: flex;
 	align-items: center;
@@ -40,19 +40,19 @@ $colores:
 	}
 	.navheader
 	{
-	    padding-top: 10px;
+	    padding-top: 3px;
 	    padding-bottom: 20px;
 	    display: flex;
 	    flex-flow: column nowrap;
 	    list-style-type: none;
 	    justify-content: space-between;
-	    margin-left: 100px;
+	    margin-left: 50px;
         .redes 
 	    {
 	        .img
 		    {
-		        width: 30px;
-			    height: 30px;
+		        width: 25px;
+			    height: 25px;
 			    margin: 3px;
 			    &:hover
 			    {
@@ -229,7 +229,403 @@ button
 	width: 75px;
 	border: solid 3px map-get($colores,anaranjado);
 }
-@media (min-width: 600px) and (orientation: landscape)
+.body{
+    height: 80%;
+    width: 100%;
+	background-image: url("../imagenes/fondo2.jpg");
+	background-size: cover;
+    #adopt {
+        height: 40%;
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        .classtitulogatos {
+            width: 100%;
+            height: 10%;
+            background-color: map-get($colores, anaranjado);
+			margin-top: 10px;
+            #titulogatos {
+                width: 100%;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 20px;
+                color: map-get($colores, verdeoscuro);
+				text-align: center;
+            }
+        }
+        .gat 
+		{
+			margin-top: 2px;
+            display: flex;
+            height: 100px;
+            width: 100px;
+            img {
+                height: 100%;
+                width: 100%;
+			}
+        }
+		.gat:hover
+		{
+			height: 200%;
+			width: 200%;
+		}
+    }
+	.linkcontacto {
+		display: block;
+		height: 25%;
+		width: 100%;
+		background-color: aqua;
+		margin-top: 30%;
+		.h1 {
+			height: 20%;
+			padding-top: 10%;
+			#contacto {
+				background-color: map-get($colores, anaranjado);
+				font-size: 15px;
+				color: map-get($colores, verdeoscuro);
+				text-align: center;
+				font-family: 'Montserrat', sans-serif;
+			   }
+		}
+		.boton {
+			height: auto;
+			width: auto;
+			margin-top: 20px;
+			margin-left: 28%;
+			border: 20px solid map-get($colores, verdeaqua); 
+			background-color: map-get($colores, verdeaqua);
+			border-radius: 30%;
+			a {
+				color: map-get($colores, anaranjado);
+				font-family: 'Montserrat', sans-serif;
+				font-size: 20px;
+			}
+		}
+	
+	}
+}
+#linkferias
+{
+    background-image: url("../imagenes/fondo2.jpg");
+	background-size: cover;
+    height: 130%;
+    width: 100%;
+    .h2 
+	{
+        background-color: map-get($colores, verdeaqua);
+        height: 10%;
+        width: 100%;
+		margin-top: 20px;
+        h2 
+        {
+        	font-size: 40px;
+            color: map-get($colores, anaranjado);
+			text-align: center;
+			font-family: 'Shantell Sans', cursive;
+        }
+    }
+    .list 
+    {
+		ul 
+		{
+			li 
+			{
+           		font-size: 20px;
+            	margin-top: 20px;
+				color: map-get($colores, verdeoscuro);
+				background-color: map-get($colores, amarillo);
+				font-family: 'Shantell Sans', cursive;
+			}
+		}
+    }
+    .imgproxactv 
+    {
+        display: flex;
+        flex-flow: row nowrap;
+        height: 300px;
+        width: 300px;
+        img 
+        {
+			margin: 70px;
+            height: 100%;
+            width:100%;
+        }
+        img:hover 
+        {
+            height: 500px;
+            width: 500px;
+            transition-duration: 3s;
+        }
+	}
+    	
+}    
+#ferias
+{
+	background-image: url("../imagenes/fondo2.jpg");
+	background-size: cover;
+    height: 100%;
+    width: 100%;
+    .h2 
+    {
+        background-color: map-get($colores, verdeaqua);
+        height: 10%;
+        width: 100%;
+        h2 
+        {
+            font-size: 40px;
+            color: map-get($colores, anaranjado);
+			font-family: 'Shantell Sans', cursive;
+			text-align: center;
+        }
+    }
+    .imgferias 
+    {
+        display: flex;
+        margin: 60px;
+        height: 100px;
+        width: 100px;
+        img 
+        {
+            height: 100%;
+            width:100%;
+			margin: 30px;
+			flex-flow: row wrap;
+        }
+        img:hover 
+        {
+            height: 400px;
+            width: 400px;
+            transition-duration: 3s;
+        }
+    }
+}
+
+
+
+@media (min-width: 451px) and (max-width: 700px)
+{
+	.header 
+	{
+	    height: 20%;
+        #logo
+	    {
+	        margin: 30px;
+	        margin-top: 5px;
+	        width: 15%;
+	        height: 75%;
+	    }
+	    #titulo 
+        {
+	        width: 50%;
+	        font-size: 25px;
+	        display: flex;
+	        align-items: center;
+	    }
+	    .navheader 
+        {
+	        padding-left: 20px;
+	        flex-flow: row nowrap;
+            .redes .img 
+            {
+	            width: 35px;
+	            height: 35px;
+	            margin: 3px;
+	        }
+	    }
+	}
+	main 
+    {
+	    width: 100%;
+	    height: 190%;
+	    display: grid;
+	    grid-template-areas: 
+		"nav1 carousel nav2"
+		"perros presentacion gatos";
+	    grid-template-columns: 5fr 6fr 5fr;
+	    grid-template-rows: 45% 50%;
+        #carousel 
+        {
+            padding-top: 100px;
+        }
+        #nav1 
+        {
+            padding-top: 100px;
+            text-align: center;
+        }
+        #nav2 
+        {
+            padding-top: 100px;
+            text-align: center;
+        }
+        li 
+        {
+            padding-top: 20px;
+            list-style-type: none;
+            font-size: 15px;
+            font-weight: bold;
+        }
+        #presentacion 
+        {
+            padding-top: 10px;
+            font-size: 15px;
+        }
+        #perros 
+        {
+            padding-top: 30px;
+            img 
+            {
+                width: 100px;
+                height: 100px;
+            }
+        }
+        #gatos 
+        {
+            padding-top: 30px;
+            img 
+            {
+                width: 110px;
+                height: 110px;
+            }
+        }
+        h3 
+        {
+            font-size: 20px;
+        }
+	}
+	footer 
+    {
+		height: 15%;
+        a 
+        {
+            font-size: 13px;
+            padding-left: 40px;
+        }
+	}
+	.titulo4 
+    {
+		font-size: 25px;
+	}
+	.titulo5
+    {
+		font-size: 20px;
+	}
+	textarea 
+    {
+		height: 100px;
+		width: 150px;
+	}
+	form 
+    {
+		height: 50%;
+		width: 70%;
+		margin-left: 15%;
+	}
+	.body{
+		height: 150%;
+		.linkcontacto
+		{
+			height: 30%;
+			margin-top: 70px;
+			.boton
+			{
+				margin-left: 230px;
+				height: 60px;
+				width: auto;
+				a {
+					font-size: 15px;
+				}
+			}
+			.h1
+			{
+				height: 20%;
+				#contacto
+				{
+					font-size: large;
+				}
+			}
+		}
+	}
+	#linkferias
+	{
+    	height: 80%;
+    	width: 100%;
+        .h2 
+       	{
+            height: 5%;
+            width: 100%;
+			margin-top: 10px;
+            h2 
+            {
+                font-size: 15px;
+            }
+        }
+        .list 
+        {
+			ul 
+			{
+				li 
+				{
+           			font-size: 10px;
+            		margin-top: 10px;
+				}
+			}
+        }
+        .imgproxactv 
+        {
+            display: flex;
+            flex-flow: row nowrap;
+            height: 150px;
+           	width: 150px;
+            img 
+           	{
+				margin: 15px;
+                height: 100%;
+                width:100%;
+            }
+            img:hover 
+            {
+                height: 200px;
+                width: 200px;
+                transition-duration: 3s;
+            }
+		}
+    	
+	}    
+	#ferias
+    {
+    	height: 50%;
+    	width: 100%;
+        .h2 
+        {
+            height: 5%;
+            width: 100%;
+            h2 
+            {
+                font-size: 10px;
+            }
+        }
+        .imgferias 
+        {
+            display: flex;
+            height: 50px;
+            width: 50px;
+            img 
+            {
+                height: 100%;
+                width:100%;
+				margin: 5px;
+				flex-flow: row wrap;
+            }
+            img:hover 
+            {
+                height: 100px;
+                width: 100px;
+                transition-duration: 3s;
+            }
+        }
+    }	
+}
+@media (min-width: 701px) and (max-width:840px)
 {
 	.header 
 	{
@@ -244,15 +640,15 @@ button
 	    #titulo 
         {
 	        width: 70%;
-	        font-size: 60px;
+	        font-size: 40px;
 	        display: flex;
 	        align-items: center;
 	    }
 	    .navheader 
         {
-	        padding-left: 80px;
+	        padding-left: 50px;
 	        flex-flow: row nowrap;
-            .img 
+            .redes .img 
             {
 	            width: 60px;
 	            height: 60px;
@@ -347,4 +743,589 @@ button
 		width: 30%;
 		margin-left: 35%;
 	}
+	.body
+	{
+		height: 150%;
+		.linkcontacto
+		{
+			height: 30%;
+			margin-top: 70px;
+			.boton
+			{
+				margin-left: 350px;
+				height: 60px;
+				width: auto;
+				a {
+					font-size: 15px;
+				}
+			}
+			.h1
+			{
+				height: 20%;
+				#contacto
+				{
+					font-size: large;
+				}
+			}
+		}
+		#adopt
+		{
+			.gat
+			{
+				margin: 20px;
+			}
+		}
+	}
+	#linkferias
+	{
+    	height: 80%;
+    	width: 100%;
+        .h2 
+       	{
+            height: 6%;
+            width: 100%;
+			margin-top: 10px;
+            h2 
+            {
+                font-size: 15px;
+            }
+        }
+        .list 
+        {
+			ul 
+			{
+				li 
+				{
+           			font-size: 10px;
+            		margin-top: 10px;
+				}
+			}
+        }
+        .imgproxactv 
+        {
+            display: flex;
+            flex-flow: row nowrap;
+            height: 150px;
+           	width: 150px;
+            img 
+           	{
+				margin: 50px;
+                height: 100%;
+                width:100%;
+            }
+            img:hover 
+            {
+                height: 300px;
+                width: 300px;
+                transition-duration: 3s;
+            }
+		}
+    	
+	}    
+	#ferias
+    {
+    	height: 50%;
+    	width: 100%;
+        .h2 
+        {
+            height: 10%;
+            width: 100%;
+            h2 
+            {
+                font-size: 15px;
+            }
+        }
+        .imgferias 
+        {
+            display: flex;
+            margin: 30px;
+            height: 80px;
+            width: 80px;
+            img 
+            {
+                height: 100%;
+                width:100%;
+				margin: 10px;
+				flex-flow: row wrap;
+            }
+            img:hover 
+            {
+                height: 100px;
+                width: 100px;
+                transition-duration: 3s;
+            }
+        }
+    }
 }
+@media (max-width:450px) 
+{
+	.header 
+	{
+	    height: 25%;
+        #logo
+	    {
+	        margin: 20px;
+	        margin-top: 5px;
+	        width: 20%;
+	        height: 55%;
+	    }
+	    #titulo 
+        {
+	        width: 30%;
+	        font-size: 30px;
+	        display: flex;
+	        align-items: center;
+	    }
+	    .navheader 
+        {
+	        padding-left: 30px;
+	        flex-flow: column nowrap;
+            .redes .img 
+            {
+	            width: 35px;
+	            height: 35px;
+	        }
+	    }
+	}
+	main 
+    {
+	    width: 100%;
+	    height: 180%;
+	    display: grid;
+		grid-template-areas: 
+		"nav1 nav2"
+		"carousel carousel"
+		"presentacion presentacion"
+		"perros perros"
+		"gatos gatos";
+		grid-template-columns: 2fr 2fr;
+		grid-template-rows: 13% 20% 20% 15% 10%;
+		grid-row-gap: 10px;
+        #carousel 
+        {
+		}
+        #nav1 
+        {
+            padding-top: 30px;
+            text-align: center;
+        }
+        #nav2 
+        {
+            padding-top: 30px;
+            text-align: center;
+        }
+        li 
+        {
+            padding-top: 10px;
+            list-style-type: none;
+            font-size: 15px;
+            font-weight: bold;
+        }
+        #presentacion 
+        {
+            padding-top: 20px;
+            font-size: 18px;
+        }
+        #perros 
+        {
+			margin-top: 100px;
+            img 
+            {
+                width: 100px;
+                height: 100px;
+            }
+        }
+        #gatos 
+        {
+            margin-top: 100px;
+            img 
+            {
+                width: 110px;
+                height: 110px;
+            }
+        }
+        h3 
+        {
+            font-size: 20px;
+        }
+	}
+	footer 
+    {
+		height: 15%;
+        a 
+        {
+            font-size: 14px;
+            padding-left: 10px;
+        }
+	}
+	.titulo4 
+   	 {
+		font-size: 25px;
+	}
+	.titulo5
+    {
+		font-size: 20px;
+	}
+	textarea 
+    {
+		height: 100px;
+		width: 150px;
+	}
+	form 
+   	{
+		height: 50%;
+		width: 50%;
+		margin-left: 25%;
+	}
+	.body{
+		height: 150%;
+		width: 100%;
+		#adopt
+		{
+			.classtitulogatos{
+				h1{
+					font-size: 10px;
+				}
+				height: 20px;
+			}
+		}
+		.linkcontacto
+		{
+			.boton
+			{
+				margin-left: 140px;
+				height: 60px;
+				width: auto;
+				a {
+					font-size: 15px;
+				}
+			}
+		}
+	}	
+	#linkferias
+	{
+    	height: 60%;
+    	width: 100%;
+        .h2 
+       	{
+            height: 5%;
+            width: 100%;
+			margin-top: 10px;
+            h2 
+            {
+                font-size: 13px;
+            }
+        }
+        .list 
+        {
+			ul 
+			{
+				li 
+				{
+           			font-size: 10px;
+            		margin-top: 10px;
+				}
+			}
+        }
+        .imgproxactv 
+        {
+            display: flex;
+            flex-flow: row nowrap;
+            height: 80px;
+           	width: 80px;
+            img 
+           	{
+				margin: 15px;
+				margin-left: 15px;
+                height: 100%;
+                width:100%;
+            }
+            img:hover 
+            {
+                height: 100px;
+                width: 100px;
+                transition-duration: 3s;
+            }
+		}
+    	
+	}    
+	#ferias
+    {
+    	height: 30%;
+    	width: 100%;
+        .h2 
+        {
+            height: 10%;
+            width: 100%;
+            h2 
+            {
+                font-size: 10px;
+            }
+        }
+        .imgferias 
+        {
+            display: flex;
+            height: 30px;
+            width: 30px;
+            img 
+            {
+                height: 100%;
+                width:100%;
+				margin: 5px;
+				flex-flow: row wrap;
+            }
+            img:hover 
+            {
+                height: 50px;
+                width: 50px;
+                transition-duration: 3s;
+            }
+        }
+    }	
+}
+@media screen and (min-width:841px)
+{
+	.header 
+	{
+	    height: 20%;
+        #logo
+	    {
+	        margin: 30px;
+	        margin-top: 5px;
+	        width: 10%;
+	        height: 85%;
+	    }
+	    #titulo 
+        {
+	        width: 70%;
+	        font-size: 60px;
+	        display: flex;
+	        align-items: center;
+	    }
+	    .navheader 
+        {
+	        padding-left: 40px;
+	        flex-flow: row nowrap;
+            .redes .img 
+            {
+	            width: 60px;
+	            height: 60px;
+	            margin: 5px;
+	        }
+	    }
+	}
+	main 
+    {
+	    width: 100%;
+	    height: 170%;
+	    display: grid;
+	    grid-template-areas: 
+		"nav1 carousel nav2"
+		"perros presentacion gatos";
+	    grid-template-columns: 4fr 6fr 4fr;
+	    grid-template-rows: 45% 50%;
+        #carousel 
+        {
+            padding-top: 50px;
+        }
+        #nav1 
+        {
+            padding-top: 100px;
+            text-align: center;
+        }
+        #nav2 
+        {
+            padding-top: 100px;
+            text-align: center;
+        }
+        li 
+        {
+            padding-top: 20px;
+            list-style-type: none;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        #presentacion 
+        {
+            padding-top: 10px;
+            font-size: 18px;
+        }
+        #perros 
+        {
+            padding-top: 60px;
+            img 
+            {
+                width: 150px;
+                height: 150px;
+            }
+        }
+        #gatos 
+        {
+            padding-top: 60px;
+            img 
+            {
+                width: 160px;
+                height: 160px;
+            }
+        }
+        h3 
+        {
+            font-size: 20px;
+        }
+	}
+	footer 
+    {
+		height: 10%;
+        a 
+        {
+            font-size: 20px;
+            padding-left: 40px;
+        }
+	}
+	.titulo4 
+    {
+		font-size: 25px;
+	}
+	.titulo5
+    {
+		font-size: 20px;
+	}
+	textarea 
+    {
+		height: 100px;
+		width: 150px;
+	}
+	form 
+    {
+		height: 50%;
+		width: 30%;
+		margin-left: 35%;
+	}
+	.body
+	{
+		height: 220%;
+		.linkcontacto
+		{
+			height: 25%;
+			margin-top: 50px;
+			.boton
+			{
+				margin-left: 560px;
+				height: 60px;
+				width: auto;
+				a {
+					font-size: 15px;
+				}
+			}
+			.h1
+			{
+				height: 10%;
+				margin-top: 10px;
+				#contacto
+				{
+					font-size: 30px;
+				}
+			}
+		}
+		#adopt
+		{
+			
+			.gat
+			{
+				height: 200px;
+				width: 200px;
+				justify-content: flex-start;
+			}
+			.gat:hover
+			{
+				height: 500px;
+				width: 500px;
+				transition-duration: 3s;
+			}
+		}
+	}
+	#linkferias
+	{
+    	height: 130%;
+    	width: 100%;
+        .h2 
+       	{
+            height: 10%;
+            width: 100%;
+			margin-top: 20px;
+            h2 
+            {
+                font-size: 40px;
+            }
+        }
+        .list 
+        {
+			ul 
+			{
+				li 
+				{
+           			font-size: 20px;
+            		margin-top: 20px;
+				}
+			}
+        }
+        .imgproxactv 
+        {
+            display: flex;
+            flex-flow: row nowrap;
+            height: 280px;
+           	width: 280px;
+            img 
+           	{
+				margin: 50px;
+                height: 100%;
+                width:100%;
+            }
+            img:hover 
+            {
+                height: 500px;
+                width: 500px;
+                transition-duration: 3s;
+            }
+		}
+    	
+	}    
+	#ferias
+    {
+    	height: 100%;
+    	width: 100%;
+        .h2 
+        {
+            height: 20%;
+            width: 100%;
+            h2 
+            {
+                font-size: 35px;
+            }
+        }
+        .imgferias 
+        {
+            display: flex;
+            margin: 50px;
+            height: 100px;
+            width: 100px;
+            img 
+            {
+                height: 100%;
+                width:100%;
+				margin: 20px;
+				flex-flow: row wrap;
+            }
+            img:hover 
+            {
+                height: 400px;
+                width: 400px;
+                transition-duration: 3s;
+            }
+        }
+    }
+}	
+
+
+
+
